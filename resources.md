@@ -61,7 +61,14 @@ for c in text:
 sorted_x = sorted(frequenze.items(), key=lambda kv: kv[1], reverse = True)
 print(sorted_x)
 ```
+```python
+trans = str.maketrans(
+    "genahcpdmtzviwulrbjoyfsk",
+    "SPRITZLONACHEFYGUMBVDKJW"
+)
 
+print(ciphertext.translate(trans))
+```
 ```python
 import string
 import base64
